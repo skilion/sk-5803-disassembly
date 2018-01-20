@@ -1,0 +1,372 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "YS7-8"
+Date "2018-01-20"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Cell BT1
+U 1 1 5A634BC0
+P 2150 1550
+F 0 "BT1" H 2250 1650 50  0000 L CNN
+F 1 "Battery_Cell" H 2250 1550 50  0000 L CNN
+F 2 "" V 2150 1610 50  0001 C CNN
+F 3 "" V 2150 1610 50  0001 C CNN
+	1    2150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q1
+U 1 1 5A635055
+P 5700 4050
+F 0 "Q1" H 5900 4100 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 5900 4000 50  0000 L CNN
+F 2 "" H 5900 4150 50  0001 C CNN
+F 3 "" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5A635088
+P 5200 5450
+F 0 "D1" H 5200 5550 50  0000 C CNN
+F 1 "D" H 5200 5350 50  0000 C CNN
+F 2 "" H 5200 5450 50  0001 C CNN
+F 3 "" H 5200 5450 50  0001 C CNN
+	1    5200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5A6350D7
+P 3150 2850
+F 0 "D3" H 3150 2950 50  0000 C CNN
+F 1 "LED" H 3150 2750 50  0000 C CNN
+F 2 "" H 3150 2850 50  0001 C CNN
+F 3 "" H 3150 2850 50  0001 C CNN
+	1    3150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A63512E
+P 2400 2850
+F 0 "R4" V 2480 2850 50  0000 C CNN
+F 1 "100" V 2400 2850 50  0000 C CNN
+F 2 "" V 2330 2850 50  0001 C CNN
+F 3 "" H 2400 2850 50  0001 C CNN
+	1    2400 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A635169
+P 5150 3550
+F 0 "R3" V 5230 3550 50  0000 C CNN
+F 1 "300k" V 5150 3550 50  0000 C CNN
+F 2 "" V 5080 3550 50  0001 C CNN
+F 3 "" H 5150 3550 50  0001 C CNN
+	1    5150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A6351A6
+P 4700 5050
+F 0 "R2" V 4780 5050 50  0000 C CNN
+F 1 "30k" V 4700 5050 50  0000 C CNN
+F 2 "" V 4630 5050 50  0001 C CNN
+F 3 "" H 4700 5050 50  0001 C CNN
+	1    4700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A6351E9
+P 4400 5050
+F 0 "R1" V 4480 5050 50  0000 C CNN
+F 1 "30k" V 4400 5050 50  0000 C CNN
+F 2 "" V 4330 5050 50  0001 C CNN
+F 3 "" H 4400 5050 50  0001 C CNN
+	1    4400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor_DC M1
+U 1 1 5A635228
+P 3500 1450
+F 0 "M1" H 3600 1550 50  0000 L CNN
+F 1 "Motor_DC" H 3600 1250 50  0000 L TNN
+F 2 "" H 3500 1360 50  0001 C CNN
+F 3 "" H 3500 1360 50  0001 C CNN
+	1    3500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DIP_x01 SW1
+U 1 1 5A635267
+P 2850 1000
+F 0 "SW1" H 2850 1150 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2850 850 50  0000 C CNN
+F 2 "" H 2850 1000 50  0001 C CNN
+F 3 "" H 2850 1000 50  0001 C CNN
+	1    2850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transformer_1P_SS T1
+U 1 1 5A6352B6
+P 3950 3050
+F 0 "T1" H 3950 3300 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 3950 2750 50  0000 C CNN
+F 2 "" H 3950 3050 50  0001 C CNN
+F 3 "" H 3950 3050 50  0001 C CNN
+	1    3950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A635312
+P 5450 3550
+F 0 "C2" H 5475 3650 50  0000 L CNN
+F 1 "C" H 5475 3450 50  0000 L CNN
+F 2 "" H 5488 3400 50  0001 C CNN
+F 3 "" H 5450 3550 50  0001 C CNN
+	1    5450 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 5A635369
+P 5200 4650
+F 0 "C1" H 5225 4750 50  0000 L CNN
+F 1 "C" H 5225 4550 50  0000 L CNN
+F 2 "" H 5238 4500 50  0001 C CNN
+F 3 "" H 5200 4650 50  0001 C CNN
+	1    5200 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Zener D2
+U 1 1 5A6353DA
+P 1550 2850
+F 0 "D2" H 1550 2950 50  0000 C CNN
+F 1 "D_Zener" H 1550 2750 50  0000 C CNN
+F 2 "" H 1550 2850 50  0001 C CNN
+F 3 "" H 1550 2850 50  0001 C CNN
+	1    1550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4250 5800 4650
+Wire Wire Line
+	5800 4650 5800 4950
+Wire Wire Line
+	5150 3400 5150 3350
+Wire Wire Line
+	5150 3350 5300 3350
+Wire Wire Line
+	5300 3350 5450 3350
+Wire Wire Line
+	5450 3350 5450 3400
+Wire Wire Line
+	5450 3750 5450 3700
+Wire Wire Line
+	5150 3750 5300 3750
+Wire Wire Line
+	5300 3750 5450 3750
+Wire Wire Line
+	5150 3750 5150 3700
+Wire Wire Line
+	5300 3750 5300 4050
+Wire Wire Line
+	5300 4050 5500 4050
+Connection ~ 5300 3750
+Wire Wire Line
+	4350 3050 5300 3050
+Wire Wire Line
+	5300 3050 5300 3350
+Connection ~ 5300 3350
+Wire Wire Line
+	4350 2850 5800 2850
+Wire Wire Line
+	5800 2850 5800 3850
+Wire Wire Line
+	5800 5150 5800 5450
+Wire Wire Line
+	4400 4850 4550 4850
+Wire Wire Line
+	4550 4850 4700 4850
+Wire Wire Line
+	4400 5250 4550 5250
+Wire Wire Line
+	4550 5250 4700 5250
+Wire Wire Line
+	4550 5250 4550 5450
+Wire Wire Line
+	4550 5450 5050 5450
+Connection ~ 4550 5250
+Wire Wire Line
+	5800 5450 5350 5450
+Wire Wire Line
+	5350 4650 5800 4650
+Connection ~ 5800 4650
+Wire Wire Line
+	5050 4650 4550 4650
+Wire Wire Line
+	4550 3250 4550 4650
+Wire Wire Line
+	4550 4650 4550 4850
+Connection ~ 4550 4850
+Connection ~ 4550 4650
+Wire Wire Line
+	4350 3250 4550 3250
+Wire Wire Line
+	4700 5250 4700 5200
+Wire Wire Line
+	4400 5250 4400 5200
+Wire Wire Line
+	4700 4850 4700 4900
+Wire Wire Line
+	4400 4900 4400 4850
+Wire Wire Line
+	1200 1000 2150 1000
+Wire Wire Line
+	2150 1000 2550 1000
+Wire Wire Line
+	3150 1000 3500 1000
+Wire Wire Line
+	3500 1000 3500 1250
+Wire Wire Line
+	3500 1950 3500 1750
+Wire Wire Line
+	1500 1950 2150 1950
+Wire Wire Line
+	2150 1950 3500 1950
+Wire Wire Line
+	2150 1950 2150 1650
+Connection ~ 2150 1000
+Wire Wire Line
+	1700 2850 1900 2850
+Wire Wire Line
+	1900 2850 2250 2850
+Wire Wire Line
+	2550 2850 3000 2850
+Connection ~ 3500 1950
+Wire Wire Line
+	1900 3250 1900 2850
+Connection ~ 1900 2850
+Wire Notes Line
+	5000 2650 5000 4300
+Wire Notes Line
+	5000 4300 6400 4300
+Wire Notes Line
+	6400 4300 6400 2650
+Wire Notes Line
+	6400 2650 5000 2650
+Wire Notes Line
+	4250 4500 6000 4500
+Wire Notes Line
+	6000 4500 6000 5650
+Wire Notes Line
+	6000 5650 4250 5650
+Wire Notes Line
+	4250 5650 4250 4500
+Text Notes 4250 5650 0    60   ~ 0
+Rectifier
+Text Notes 5000 2750 0    60   ~ 0
+Voltage adapting circuit
+Text Notes 2000 850  0    60   ~ 0
+Main circuit
+Wire Wire Line
+	2150 1000 2150 1350
+Wire Wire Line
+	3300 2850 3500 2850
+Wire Wire Line
+	3500 2850 3550 2850
+Connection ~ 2150 1950
+Wire Wire Line
+	3550 3250 1900 3250
+Wire Wire Line
+	1400 2850 1200 2850
+Wire Wire Line
+	1200 2850 1200 1000
+Wire Wire Line
+	1500 1950 1500 2500
+Wire Wire Line
+	1500 2500 3500 2500
+Wire Wire Line
+	3500 2500 3500 2850
+Connection ~ 3500 2850
+Wire Notes Line
+	2000 2050 4000 2050
+Wire Notes Line
+	4000 2050 4000 750 
+Wire Notes Line
+	4000 750  2000 750 
+Wire Notes Line
+	2000 750  2000 2050
+Wire Notes Line
+	1000 2350 6600 2350
+Wire Notes Line
+	6600 2350 6600 5950
+Wire Notes Line
+	6600 5950 1000 5950
+Wire Notes Line
+	1000 5950 1000 2350
+Text Notes 1000 5950 0    60   ~ 0
+Charger
+$Comp
+L AC #PWR?
+U 1 1 5A63960F
+P 5800 5150
+F 0 "#PWR?" H 5800 5050 50  0001 C CNN
+F 1 "AC" H 5650 5300 50  0000 C CNN
+F 2 "" H 5800 5150 50  0001 C CNN
+F 3 "" H 5800 5150 50  0001 C CNN
+	1    5800 5150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
